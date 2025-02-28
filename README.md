@@ -35,9 +35,21 @@ On the Ollama website, go to the Model menu and choose the preferred. Have atten
 
 After choose the model execute in your prefer command line software the line like `ollama run deepseek-r1:7b`. After load model you will be result like the image below.
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/4b283365-3493-4817-a896-9ef022251449" width="800" alt="Descrição da imagem">
-</div>
+![img](https://github.com/user-attachments/assets/4b283365-3493-4817-a896-9ef022251449)
 
 Now you can put data in the command line application e receive the response like in ChatGpt DeepSeek or QWen, but the response precision depends on the loaded model.
+After running the model, which is previously trained, you can start using it. I asked some basic questions in Portuguese and English and got coherent answers in both languages.
 
+## Step 3
+
+Finally, I added a UI tool for better interaction.
+
+### UI Interface
+
+In the last step install `Chatbox-1.10.2-Setup.exe` and execute.
+
+ - When opening the application, click on Settings
+ - In the model provider selection field, select Ollama API
+ - In the URL, enter the URL to which your Ollama is responding
+
+![image](https://github.com/user-attachments/assets/78d895c1-2e96-4025-8adc-6471cc0ddac6)
