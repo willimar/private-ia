@@ -1,4 +1,4 @@
-# Step by Step to install DeepSeek in your computer
+# Thre steps to load personal DeepSeek
 
 ## Introduction
 
@@ -33,4 +33,11 @@ On the Ollama website, go to the Model menu and choose the preferred. Have atten
   <img src="https://github.com/user-attachments/assets/cd3c958a-b7fe-4399-91af-259ec5903865" width="300" alt="Descrição da imagem">
 </div>
 
-After choose the model execute in your prefer command line software the line like `ollama run deepseek-r1:7b`.
+After choose the model execute in your prefer command line software the line like `ollama run deepseek-r1:7b`. After load model you will be result like the image below.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4b283365-3493-4817-a896-9ef022251449" width="800" alt="Descrição da imagem">
+</div>
+
+Now you can put data in the command line application e receive the response like in ChatGpt DeepSeek or QWen, but the response precision depends on the loaded model.
+
