@@ -1,55 +1,105 @@
-# Thre steps to load personal DeepSeek
+
+# Three Steps to Load Personal DeepSeek
 
 ## Introduction
 
-***DeepSeek*** refers to a series of large language models (LLMs) developed by the company 深度求索 (DeepSeek) , which is based in China. These models are designed to handle a wide variety of tasks across different domains, including natural language processing (NLP), code generation, and multi-modal tasks.
+**DeepSeek** refers to a series of large language models (LLMs) developed by 深度求索 (DeepSeek), a company based in China. These models are designed to handle a wide variety of tasks across different domains, including natural language processing (NLP), code generation, and multi-modal tasks.
 
-DeepSeek is a open source platform and you can see the source code in [GitHub](https://github.com/) on [Project](https://github.com/deepseek-ai/DeepSeek-V3).
+DeepSeek is an open-source platform, and its source code can be found on [GitHub](https://github.com/deepseek-ai/DeepSeek-V3) . However, this guide focuses on using pre-built tools to interact with the model locally without needing to build the code from scratch.
 
-But our project will be simple and will not be necessary build some code. Only go to way the steps.
+----------
 
-## Step 1
+## Step 1: Software Requirements
 
-Software requirement. You need download of the some softwares before all. I recommend last version from the softwares.
+Before proceeding, ensure you have the following software installed on your system. Download the latest versions for optimal performance:
 
- - **Ollama**: [https://ollama.com/download](https://ollama.com/download)
- - **ChatBox**: [https://chatboxai.app/pt-PT](https://chatboxai.app/pt-PT)
+-   **Ollama** : A tool for managing LLMs on local environments.  
+    Download: [https://ollama.com/download](https://ollama.com/download)
+-   **ChatBox** : A user-friendly interface for interacting with LLMs.  
+    Download: [https://chatboxai.app/pt-PT](https://chatboxai.app/pt-PT)
 
-## Step 2
+----------
 
-### Ollama
+## Step 2: Setting Up Ollama
 
-The Ollama is a tool used to facility the management of the LLMs (Large Language Models) on local environments.
+### What is Ollama?
 
-> Execute OllamaSetup.exe downloaded in computer. After install check if the software is started in the computer. In the windows you can check in tray icons, left on the clock. See the image.
+Ollama simplifies the process of downloading, running, and managing LLMs on your local machine.
+
+#### Installation and Setup:
+
+1.  **Install Ollama** :
+    
+    -   Run the `OllamaSetup.exe` file downloaded from the official website.
+    -   After installation, verify that Ollama is running. On Windows, check the system tray (near the clock) for the Ollama icon.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9f0e3272-d44e-440b-9403-4ce51c4219b7" width="300" alt="Descrição da imagem">
 </div>
 
-On the Ollama website, go to the Model menu and choose the preferred. Have attention to memory requirement. To my first test I chose the 7b, was a fast training before use a big data.
+-   **Choose a Model** :
+    
+    -   Visit the [Ollama Models page](https://ollama.com/library) and select a DeepSeek model that fits your hardware capabilities. For example:
+        -   **deepseek-r1:7b** (lightweight, suitable for testing)
+        -   **deepseek-r1:33b** (more powerful, requires more memory)
+    -   Ensure your system meets the memory requirements for the selected model.
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/cd3c958a-b7fe-4399-91af-259ec5903865" width="300" alt="Descrição da imagem">
-</div>
+-   **Run the Model** :
+    
+    -   Open your preferred command-line interface (CLI) and execute the following command:
 
-After choose the model execute in your prefer command line software the line like `ollama run deepseek-r1:7b`. After load model you will be result like the image below.
+        ```bash
+        ollama run deepseek-r1:7b
+        ```
+    -   Wait for the model to load. Once loaded, you should see a prompt indicating the model is ready.
+    ![img](https://github.com/user-attachments/assets/4b283365-3493-4817-a896-9ef022251449)
 
-![img](https://github.com/user-attachments/assets/4b283365-3493-4817-a896-9ef022251449)
+2.  **Test the Model** :
+    
+    -   Start interacting with the model directly in the CLI. You can ask questions in multiple languages (e.g., Portuguese, English) and receive coherent responses.
 
-Now you can put data in the command line application e receive the response like in ChatGpt DeepSeek or QWen, but the response precision depends on the loaded model.
-After running the model, which is previously trained, you can start using it. I asked some basic questions in Portuguese and English and got coherent answers in both languages.
+----------
 
-## Step 3
+## Step 3: Adding a UI Interface with ChatBox
 
-Finally, I added a UI tool for better interaction.
+To enhance your interaction with DeepSeek, use **ChatBox** , a graphical user interface (GUI) tool.
 
-### UI Interface
+### Installation and Configuration:
 
-In the last step install `Chatbox-1.10.2-Setup.exe` and execute.
+1.  **Install ChatBox** :
+    
+    - Run the `Chatbox-1.10.2-Setup.exe` file downloaded earlier.
 
- - When opening the application, click on Settings
- - In the model provider selection field, select Ollama API
- - In the URL, enter the URL to which your Ollama is responding
+2.  **Configure ChatBox** :
+    
+    -   Open the ChatBox application.
+    -   Navigate to **Settings** .
+    -   In the **Model Provider** field, select **Ollama API** .
+    -   Enter the URL where your Ollama instance is running (usually `http://localhost:11434`).
 
-![image](https://github.com/user-attachments/assets/78d895c1-2e96-4025-8adc-6471cc0ddac6)
+    ![image](https://github.com/user-attachments/assets/78d895c1-2e96-4025-8adc-6471cc0ddac6)
+
+3.  **Start Interacting** :
+    
+    -   Return to the main ChatBox interface and begin chatting with the DeepSeek model. The GUI provides a more intuitive and visually appealing way to interact compared to the CLI.
+
+----------
+
+## Conclusion
+
+By following these three steps, you can successfully set up and interact with the **DeepSeek** LLM on your local machine:
+
+ > 1. Install **Ollama** and **ChatBox** .
+ > 2. Use Ollama to download and run the desired DeepSeek model.
+ > 3. Configure **ChatBox** to provide a user-friendly interface for interacting with the model.
+
+This setup allows you to leverage the power of DeepSeek for various tasks, such as answering questions, generating text, or experimenting with code, all within a local environment.
+
+----------
+
+### Additional Notes:
+
+-   **Hardware Considerations** : Ensure your system has sufficient RAM and GPU resources (if applicable) to handle the chosen model. For example:
+    -   **7B models** : Require ~8–16 GB of RAM.
+    -   **33B models** : Require ~32–64 GB of RAM.
+-   **Troubleshooting** : If you encounter issues, consult the [Ollama documentation](https://ollama.com/docs) or the [DeepSeek GitHub repository](https://github.com/deepseek-ai/DeepSeek-V3) .
